@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Olugbenga Egunjobi</title>
+
+    <!-- Imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,3
+    00;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1
+    ,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- Linking CSS & js -->
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+  
+    <!-- Title Icon -->
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="../smediaIcon/globe.jpg"
+    />
+
+</head>
+<body>
+      <nav>
+         <h1>OLUGBENGA EGUNJOBI</h1>
+         <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+         </ul>
+         <button class="burger-menu" id="burger-menu">
+           <ion-icon class="bars" name="menu-outline"></ion-icon>
+         </button>
+      </nav>
+
+      <section class="hero" id="about">
+
+        <img
+          src="../image/olugbengaPortfolio.png"
+          alt="olugbenga"
+          loading="lazy"
+          class="hero-image"
+        /> 
+
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            I'm a skilled software developer that has a great drive to provide scalable and efficient solutions; demonstrated aptitude for creating and managing high-performing, user-friendly online applications; and devoted to learning new technologies and following the newest fashions. I'm  also dedicated to lifelong learning and keeping abreast of the most recent developments in the dynamic industry of software development.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="skills" id="skills">
+        <h2 class="skill-header">My Tech Stack</h2>
+        <!-- <h3 class="skill-header2" >Technologies I've been working with recently</h3> -->
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="../programmingLogo/vscode-icons_file-type-html.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="../programmingLogo/vscode-icons_file-type-css.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="../programmingLogo/vscode-icons_file-type-js-official.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="../programmingLogo/typescriptImages.jpg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="../programmingLogo/logos_react.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="../programmingLogo/akar-icons_github-fill.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <h3 class="projects-title2" >Things I've built so far</h3>
+
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="../image/todolistProjectImage.PNG"
+              alt="todo-list"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">To-do List</h3>
+            <p class="project-details">
+              This is a to-do list where users can log in their schedule. it enable the users 
+              input more than one task and also allow them to edit and delete once 
+              they are done with a particular task.
+            </p>
+            <h4 class="tech-stack">Tech stack: HTML, CSS, Javascript</h4>
+            <a href="https://cyberhawkgroupproject.netlify.app" class="project-link">Click To Preview</a>
+          </div>
+
+          <div class="project-container project-card">
+            <img
+              src="../image/calculatorProjectimage.PNG"
+              alt="calculator"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Calculator</h3>
+            <p class="project-details">
+              A calculator that can help the users to perform some basic arithmetic.
+            </p>
+            <h4 class="tech-stack">Tech stack: HTML, CSS</h4>
+            <a href="https://olugbengacalculatorproject.netlify.app" class="project-link">Click To Preview</a>
+          </div>
+
+          <div class="project-container project-card">
+            <img
+              src="../image/demarketLandingpage.PNG"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">De Market Landing Page</h3>
+            <p class="project-details">
+              De Market is an online store where prospects can purchase 
+              groceries and perishable goods such as tomato, pepper etc. With the aid 
+              of this web application at thier conveniency 24/7.
+            </p>
+            <h4 class="tech-stack">Tech stack: HTML, CSS, Javascript</h4>
+            <a href="#" target="_blank" class="project-link">Click To Preview</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Leave a Message For Me</h2>
+
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mjvnrdnv" method="POST">
+              <div class="form-control">
+                <label for="name">First Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Given Name "
+                  class="input-field"
+                  required
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="name">Last Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Surname "
+                  class="input-field"
+                  required
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="wazobia@mail.com"
+                  class="input-field"
+                  required
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Write your message here..."
+                  name="message"
+                  class="textareaInput"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+              >Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+      <hr>
+
+      <section class="meansContact">
+        <div class="directContact">
+          <a  href="tel:+2348160016556">+2348160016556</a>
+          <a id="email-contact" href="mailto: olugbenga.s.egunjobi@gmail.com?subject=Mail from My Portfolio">
+            olugbenga.s.egunjobi@gmail.com</a>
+        </div>
+
+
+        <div class="socialMedia">
+          <a href="https://twitter.com/@OluFootprints" 
+            ><img
+              src="../smediaIcon/xLogo.PNG"
+              alt="Xspace"
+              loading="lazy"
+              class="socialcon"
+          /></a>
+  
+          <a href="https://www.linkedin.com/in/olugbengaegunjobi"
+            ><img
+              src="../smediaIcon/linkedinLogo.png"
+              alt="LinkedIn"
+              loading="lazy"
+              class="socialcon"
+          /></a>
+  
+          <a href="https://github.com/Lugbenga05"
+            ><img
+              src="../smediaIcon/githubLogo.png"
+              alt="gitHub"
+              class="socialcon"
+          /></a>
+        </div>
+      </section>
+
+      <footer>
+        <p class="copy">
+          Built by OLUGBENGA EGUNJOBI
+        </p>
+        <p class="copy">© Copyright 2024</p>
+      </footer>
+
+      <i class="scroll-up" id="scroll-up">
+        <img
+        src="../smediaIcon/scrollupIcon.png"
+        class="socialconUp-arrow"
+        alt="scroll-up"/>
+      </i>
+
+
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+     <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+</body>
+</html>
